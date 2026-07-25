@@ -1,0 +1,27 @@
+{
+  "name": "hinge-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^43.2.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/node": "^26.1.1",
+    "concurrently": "^10.0.4",
+    "electron-builder": "^26.15.3",
+    "electronmon": "^2.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2",
+    "vite-plugin-electron": "^1.1.0",
+    "vite-plugin-electron-renderer": "^1.0.0",
+    "wait-on": "^9.1.0"
+  }
+}
