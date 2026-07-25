@@ -1,9 +1,9 @@
-import { contextBridge, ipcRenderer } from 'electron'
+const { contextBridge, ipcRenderer } = require('electron')
 
 const electronAPI = {
   requestScreenAccess: () => ipcRenderer.invoke('request-screen-access'),
   getWindowSources: () => ipcRenderer.invoke('get-window-sources'),
-  captureFrame: (sourceId: string) => ipcRenderer.invoke('capture-frame', sourceId),
+  captureFrame: (sourceId) => ipcRenderer.invoke('capture-frame', sourceId),
 }
 
 contextBridge.exposeInMainWorld('electronAPI', electronAPI)
